@@ -24,4 +24,4 @@ class Post(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return self.title, self.author
+        return f'{self.title}, {self.author}'
